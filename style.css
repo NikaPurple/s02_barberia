@@ -291,10 +291,14 @@ nav{
       .navbar .nav-links.show1 .links .htmlcss-arrow,
       .navbar .nav-links.show3 .links .js-arrow{
           transform: rotate(180deg);
-  }
+      }
       .navbar .nav-links.show2 .links .more-arrow{
         transform: rotate(90deg);
       }
+    .musica{
+      width: auto;
+      margin: 50px;
+    }
   }
   @media (max-width:370px){
     nav .navbar .nav-links{
@@ -544,5 +548,9 @@ td, th{
         width: auto;
         display: block;
         margin: 20px 0;
-    } 
+    }
+    .musica{
+      width: auto;
+      margin: 50px;
+    }
 }
