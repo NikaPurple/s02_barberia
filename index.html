@@ -1,27 +1,69 @@
 <!DOCTYPE html>
 <html lang="es"> 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Barbería Alura</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    </head>
-
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Barbería Alura</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">     
+</head>
+<body>
+      
         <header>
-            <div class="caja">
+            <nav>
+                <img src="imagenes/logo.png" class="logo">
+            
+                <div class="nav__hamburguer"></div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+            
+                    <li>
+                        <a href="#">Ofrecemos</a>
+                        <ul>
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="musica.html">Musica</a></li>
+                        </ul>
+                    </li>
+            
+                    <li><a href="contacto.html">Contacto</a></li>
+        
+                </ul>
+                
+            </nav>
+        </header>
+        
+            <!-- <div class="caja">
                 <h1><img src="imagenes/logo.png"></h1>
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="productos.html">Productos</a></li>
+                        <li class="nav__item">
+
+                            <span class="nav__parent">Ofrecemos
+                                <img src="./images/icon-arrow-down.svg" class="nav__arrow">            
+                            </span>
+
+                            <ul class="nav__inner">
+
+                                <li class="nav__dropdown">
+                                    <a href="productos.html" class="nav__link">Productos</a>
+                                </li>
+
+                                <li class="nav__dropdown">
+                                    <a href="musica.html" class="nav__link">Musica</a>
+                                </li>
+		                </li>
+
+		              </ul>
+
+		        </li>
                         <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
-        </header>
+            CONTENEDOR AGREGADO-->
+
 
         <img class="banner" src="banner/banner.jpg">
 
@@ -42,7 +84,7 @@
                 <h3 class="titulo-principal">Nuestra Ubicación</h3>
                 <p>Nuestro establecimiento está ubicado en el corazón de la ciudad.</p>
                 <div class="mapa-contenido">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1913.8717931850515!2d-71.54959698422121!3d-16.387019261869106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a6a0172d35d%3A0xebeb3b98aa2420d9!2sI.E.E.%20Honorio%20Delgado%20Espinoza!5e0!3m2!1ses-419!2spe!4v1688101093249!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4288410000345!2d-46.636059923803714!3d-23.58894837878076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Education%20and%20Innovation!5e0!3m2!1ses!2spe!4v1681436509508!5m2!1ses!2spe" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
             </section>
@@ -72,8 +114,8 @@
 
 
         <footer>
-            <img src="imagenes/logo-blanco.png">
-            <p class="copy">&copy Copyright Barbería Alura 2023</p>
+            <img src="imagenes/logo-blanco.png" width="30%">
+            <p class="copy">&copy Copyright Barbería - 2023</p>
         </footer>
     </body>
 
