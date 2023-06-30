@@ -4,37 +4,81 @@ body{
 
 header{
     background-color: #BBBBBB;
-    padding: 20px 0;;
-}
-
-.caja{
-    width: 940px;
-    position: relative;
-    margin: 0 auto;
+    padding: 20px 0;
 }
 
 nav{
-    position: absolute;
-    top: 110px;
-    right: 0;
+    background-color: #BBBBBB;
 }
 
-nav li{
-    display: inline;
-    margin: 0 0 0 15px;
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
 }
 
-nav a{
+nav .logo{
+    float: left;
+    width: 18%;
+    padding-left: 60px;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+
+nav ul li{
+    display: inline-block;
+    background: #BBBBBB;
+    margin: 0 5px;
+}
+
+
+nav ul li a{
     text-transform: uppercase;
     color: #000000;
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
+    line-height: 70px;
+    padding: 8px 15px;
 }
 
-nav a:hover{
-    color: #c78c19;
-    text-decoration: underline;
+nav ul li a:hover{
+    /*box-shadow: 0 0 5px #33ffff;*/
+    color: rgb(255, 84, 78);
+    /*text-decoration: underline;*/
+}
+
+nav ul ul{
+    position: absolute;
+    top: 70px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 180px;
+    float: none;
+    display: list-item;
+    background: rgb(255, 84, 78);
+    border-bottom: 1px solid rgb(255, 84, 78);
+}
+
+nav ul ul li a:hover{
+    color: white;
+    box-shadow: none;
+
 }
 
 .productos{
@@ -81,6 +125,11 @@ nav a:hover{
     margin-top: 10px;
 }
 
+.musica {
+    padding: 3em 0;
+    padding-left: 60px;
+}
+
 footer{
     text-align: center;
     background: url(imagenes/bg.jpg);
@@ -94,6 +143,7 @@ footer{
 }
 
 form{
+    padding: 5%;
     margin: 40px 0;
 }
 
@@ -134,6 +184,7 @@ form label, form legend{
 
 table{
     margin: 40px;
+    padding-left: 5%;
 }
 
 thead{
@@ -153,9 +204,6 @@ td, th{
     width: 100%;
 }
 
-main > p{
-
-}
 
 .principal{
     padding: 3em 0;
